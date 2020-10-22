@@ -15,7 +15,7 @@ import { makeSelectUsername } from 'containers/HomePage/selectors';
 export function* getRepos() {
   // Select username from store
   const username = yield select(makeSelectUsername());
-  const requestURL = `http://3.128.27.158/api/${username}`;
+  const requestURL = `http://3.128.27.158/api/aws`;
 
   try {
     // Call our request helper (see 'utils/request')
